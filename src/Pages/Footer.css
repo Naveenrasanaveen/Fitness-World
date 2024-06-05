@@ -1,0 +1,38 @@
+.boxs{
+    color: white;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+    
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1000px;
+    margin: 0 auto;
+   
+}
+h1{
+    color: orangered;
+    margin: 30px 0px;
+    
+}
+ul li{
+    list-style: none;
+}
+@media (max-width:850px) {
+
+    .boxs{
+        flex-direction: column;
+        
+    }
+    .boxs div{
+        margin: 30px;
+    }
+    
+}

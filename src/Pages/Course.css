@@ -1,0 +1,96 @@
+.course-container {
+    color: white;
+    background-image: url('./../assets/pexels-victorfreitas-2261477.jpg');
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: ; */
+  
+}
+.course-container h1{
+    font-size: 80px;
+}
+.course-container h1,p{
+    margin-left: 20px;
+}
+.courses{
+   overflow: scroll;
+   display: flex;
+   align-items: center;
+   
+}
+.courses::-webkit-scrollbar{
+    display: none;
+}
+.courses ul{
+    display: flex;
+    transition: 0.5s;
+    
+}
+.courses ul li{
+    list-style: none;
+    width: 50%;
+    padding: 20px;
+   
+}
+.slider{
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    line-height: 1.4;
+    color: black;
+    width: 500px;
+    min-width: 500px;
+    overflow: hidden;
+
+}
+.slider img{
+   border-radius: 20px;
+   margin-bottom: 2%;
+   padding: 0px 2%;
+   width: 420px;
+   min-width: 100px;
+   
+}
+.slider img:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+.slider div{
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+   justify-content: center;
+
+}
+.slider button{
+    padding: 5px 10px;
+    background-color: orangered;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.slider button:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+@media (max-width:1300px) {
+   
+    .courses ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+@media (max-width:900px) {
+   
+    .course-container{
+        min-width: 800px;
+    }
+}
+@media (max-width:600px) {
+    .course-container h1{
+        font-size: 50px;
+    }
+}

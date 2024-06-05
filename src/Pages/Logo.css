@@ -1,0 +1,73 @@
+.logo-container{
+    color: white;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.736);
+    width: 100%;
+    min-width:100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logo-page{
+    width: 350px;
+    max-height: 500px;
+    background-color: orangered;
+    position: relative;
+    border-radius: 20px;
+
+}
+.logo-page form input{
+    display: block;
+    min-width:250px ;
+    padding: 5px 10px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.logo-page form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: start;
+    padding: 30px;
+}
+.logo-page form button{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 2px 6px;
+}
+.logo-page form button:hover{
+   background-color: white;
+   color: black;
+}
+.logo-page form p span{
+    font-size: 17px;
+   color: black;
+   padding: 5px ;
+   
+}
+
+.logo-page form p span:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (max-width:900px) {
+    .logo-container{
+        min-width: 800px;
+    }
+    
+}

@@ -1,0 +1,57 @@
+.message-container{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    padding: 5% 10%;
+}
+ul li{
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+h1{
+    text-align: center;
+}
+.messageing form label{
+    display: block;
+    margin: 5px 0px;
+}
+.sending-btn{
+   font-size: 20px;
+}
+.messageing form input{
+   min-width:400px;
+   padding: 2% 5%;
+   font-weight: 600;
+}
+textarea{
+    min-width: 300px;
+    padding: 10px;
+    min-height: 100px;
+    font-weight: 600;
+}
+.messageing button{
+  font-size: 15px;
+  padding: 2px 20px;
+  border-radius:20px;
+  background-color: orangered;
+  border: none;
+  margin-top: 20px;
+}
+textarea{
+    display: block;
+}
+
+@media (max-width:800px) {
+
+    .message-container{
+          flex-direction: column;
+          margin-left: 400px;
+    }
+    
+    
+}
+

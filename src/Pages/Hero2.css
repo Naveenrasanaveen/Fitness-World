@@ -1,0 +1,129 @@
+.hero2-container{
+    
+    background-color: white;
+    position: relative;
+    padding: 5% 10%;
+
+   
+
+}
+.hero2{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     gap: 100px;
+}
+
+
+.hero2-image {
+    display: flex;
+    gap: 10px; 
+}
+.image1{
+    
+    min-width: 100px;
+    min-height: 300px;
+    width: 200px;
+    height: 600px;
+    background-image: url('./../assets/banner1.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+
+}
+.image2{
+    min-width: 100px;
+    min-height: 300px;
+    width: 200px;
+    height: 600px;
+    background-image: url('./../assets/banner2.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 60px;
+}
+.image-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 70px;
+}
+.hero2-content1{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    gap: 10px;
+    align-items: start;
+}
+.hero2-content1 h1{
+    font-size: 70px;
+}
+.hero2-content1 h2{
+    font-size: 30px;
+    font-weight: 200;
+}
+.hero3-content3{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.hero3-content3 .btn1{
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.hero3-content3 .btn1{
+    background-color: orangered;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.video-icon {
+    font-size: 30px;
+    margin-top: 10px;
+}
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    
+}
+.video:hover{
+   transform: scale(1.1);
+   transition: 0.2s;
+}
+
+.video-player{
+    background-color: rgba(0, 0, 0, 0.597);
+    width:100%;
+    height:700px;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+@media (max-width:900px) {
+    .hero2{
+        flex-direction: column;
+        
+    }
+    .hero2-container{
+        min-width: 800px;
+    }
+    .video-player{
+        min-height: 100%;
+    }
+    
+}
+@media (max-width:600px) {
+    .hero2-content1 h1{
+        font-size: 50px;
+    }
+}
+

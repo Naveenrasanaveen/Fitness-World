@@ -1,0 +1,119 @@
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+.navigation ul {
+   display: flex;
+   gap: 80px;
+}
+.nav-content{
+    gap: 80px;
+}
+.container{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+
+}
+.logo-content{
+    gap: 20px;
+}
+.logo-content h2{
+    color: orangered;
+}
+.logo{
+    font-size: 30px;
+}
+.navigation ul li{
+    list-style: none;
+    font-weight: 400;
+    border-bottom: 3px transparent solid ;
+    cursor: pointer;
+}
+.navigation ul li:hover{
+
+    border-bottom: 3px orangered solid ;
+    transition: all 0.5s ease-in-out;
+    
+
+}
+.signup h3{
+
+    background-color: orangered;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+.signup h3:hover{
+    background-color: rgba(255, 68, 0, 0.793);
+}
+.menu-bar{
+    font-size: 30px;
+    display: none;
+}
+
+.side-menu1{
+    position: absolute;
+    top: 80px;
+    z-index: 3;
+    background-color: orangered;
+    display: none;
+    transition: 0.3s;
+   padding: 10px 20px;
+   border-radius: 10px;
+   font-size: 20px;
+
+}
+.menu-box{
+    display: block;
+    transition: 0.3s;
+}
+.side-menu1 button{
+    padding: 5px 10px;
+    background-color: rgb(8, 8, 8);
+    color: white;
+}
+
+
+
+
+
+
+@media (max-width:900px) {
+    .navigation ul{
+        gap: 50px;
+        font-size: 16px;
+    }
+    
+}
+
+
+@media (max-width:750px) {
+    
+    
+    .nav-content{
+        display: none;
+    }
+    
+    .menu-bar{
+        display:block;
+        text-align: end;
+        position: fixed;
+        right: 200px;
+        
+        
+    }
+    .container{
+        min-width:600px;
+
+    }
+    
+    
+    
+}
